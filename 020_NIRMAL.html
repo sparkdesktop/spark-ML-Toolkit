@@ -9155,4 +9155,122 @@ Browsers not listed, including Safari, are supported via the styling under the
   box-orient: horizontal;
   box-align: stretch;
   /* Modern browsers */
-  displ
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+.hbox > * {
+  /* Old browsers */
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  /* Modern browsers */
+  flex: none;
+}
+.vbox {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.vbox > * {
+  /* Old browsers */
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  /* Modern browsers */
+  flex: none;
+}
+.hbox.reverse,
+.vbox.reverse,
+.reverse {
+  /* Old browsers */
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+  box-direction: reverse;
+  /* Modern browsers */
+  flex-direction: row-reverse;
+}
+.hbox.box-flex0,
+.vbox.box-flex0,
+.box-flex0 {
+  /* Old browsers */
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+  /* Modern browsers */
+  flex: none;
+  width: auto;
+}
+.hbox.box-flex1,
+.vbox.box-flex1,
+.box-flex1 {
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+.hbox.box-flex,
+.vbox.box-flex,
+.box-flex {
+  /* Old browsers */
+  /* Old browsers */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  /* Modern browsers */
+  flex: 1;
+}
+.hbox.box-flex2,
+.vbox.box-flex2,
+.box-flex2 {
+  /* Old browsers */
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  box-flex: 2;
+  /* Modern browsers */
+  flex: 2;
+}
+.box-group1 {
+  /*  Deprecated */
+  -webkit-box-flex-group: 1;
+  -moz-box-flex-group: 1;
+  box-flex-group: 1;
+}
+.box-group2 {
+  /* Deprecated */
+  -webkit-box-flex-group: 2;
+  -moz-box-flex-group: 2;
+  box-flex-group: 2;
+}
+.hbox.start,
+.vbox.start,
+.start {
+  /* Old browsers */
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  /* Modern browsers */
+  justify-content: flex-start;
+}
+.hbox.end,
+.vbox.end,
+.end {
+  /* Old browsers */
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  /* Modern browsers */
+  j
