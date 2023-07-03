@@ -9561,3 +9561,112 @@ span#login_widget > .button[disabled]:focus,
 #logout[disabled]:focus,
 fieldset[disabled] span#login_widget > .button:focus,
 fieldset[disabled] #logout:focus,
+span#login_widget > .button.disabled.focus,
+#logout.disabled.focus,
+span#login_widget > .button[disabled].focus,
+#logout[disabled].focus,
+fieldset[disabled] span#login_widget > .button.focus,
+fieldset[disabled] #logout.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+span#login_widget > .button .badge,
+#logout .badge {
+  color: #fff;
+  background-color: #333;
+}
+.nav-header {
+  text-transform: none;
+}
+#header > span {
+  margin-top: 10px;
+}
+.modal_stretch .modal-dialog {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 80vh;
+}
+.modal_stretch .modal-dialog .modal-body {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  flex: 1;
+}
+.modal-header {
+  cursor: move;
+}
+@media (min-width: 768px) {
+  .modal .modal-dialog {
+    width: 700px;
+  }
+}
+@media (min-width: 768px) {
+  select.form-control {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+/*!
+*
+* IPython auth
+*
+*/
+.center-nav {
+  display: inline-block;
+  margin-bottom: -4px;
+}
+[dir="rtl"] .center-nav form.pull-left {
+  float: right !important;
+  float: right;
+}
+[dir="rtl"] .center-nav .navbar-text {
+  float: right;
+}
+[dir="rtl"] .navbar-inner {
+  text-align: right;
+}
+[dir="rtl"] div.text-left {
+  text-align: right;
+}
+/*!
+*
+* IPython tree view
+*
+*/
+/* We need an invisible input field on top of the sentense*/
+/* "Drag file onto the list ..." */
+.alternate_upload {
+  background-color: none;
+  display: inline;
+}
+.alternate_upload.form {
+  padding: 0;
+  margin: 0;
+}
+.alternate_upload input.fileinput {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+.alternate_upload .btn-xs > input.fileinput {
+  margin: -1px -5px;
+}
+.alternate_upload .btn-upload {
+  position: relative;
+ 
