@@ -12624,4 +12624,113 @@ span.autosave_status {
   margin-left: -5px;
   margin-top: 2px;
   margin-bottom: 5px;
-  box-si
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.toolbar select,
+.toolbar label {
+  width: auto;
+  vertical-align: middle;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  display: inline;
+  font-size: 92%;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  padding: 0px;
+  padding-top: 3px;
+}
+.toolbar .btn {
+  padding: 2px 8px;
+}
+.toolbar .btn-group {
+  margin-top: 0px;
+  margin-left: 5px;
+}
+.toolbar-btn-label {
+  margin-left: 6px;
+}
+#maintoolbar {
+  margin-bottom: -3px;
+  margin-top: -8px;
+  border: 0px;
+  min-height: 27px;
+  margin-left: 0px;
+  padding-top: 11px;
+  padding-bottom: 3px;
+}
+#maintoolbar .navbar-text {
+  float: none;
+  vertical-align: middle;
+  text-align: right;
+  margin-left: 5px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+.select-xs {
+  height: 24px;
+}
+[dir="rtl"] .btn-group > .btn,
+.btn-group-vertical > .btn {
+  float: right;
+}
+.pulse,
+.dropdown-menu > li > a.pulse,
+li.pulse > a.dropdown-toggle,
+li.pulse.open > a.dropdown-toggle {
+  background-color: #F37626;
+  color: white;
+}
+/**
+ * Primary styles
+ *
+ * Author: Jupyter Development Team
+ */
+/** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
+ * of chance of beeing generated from the ../less/[samename].less file, you can
+ * try to get back the less file by reverting somme commit in history
+ **/
+/*
+ * We'll try to get something pretty, so we
+ * have some strange css to have the scroll bar on
+ * the left with fix button on the top right of the tooltip
+ */
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*properties of tooltip after "expand"*/
+.bigtooltip {
+  overflow: auto;
+  height: 200px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 500m
