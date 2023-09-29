@@ -13492,4 +13492,88 @@ div#notebook {
 RangeIndex: 395 entries, 0 to 394
 Data columns (total 31 columns):
 school        395 non-null object
-sex     
+sex           395 non-null object
+age           395 non-null int64
+address       395 non-null object
+famsize       395 non-null object
+Pstatus       395 non-null object
+Medu          395 non-null int64
+Fedu          395 non-null int64
+Mjob          395 non-null object
+Fjob          395 non-null object
+reason        395 non-null object
+guardian      395 non-null object
+traveltime    395 non-null int64
+studytime     395 non-null int64
+failures      395 non-null int64
+schoolsup     395 non-null object
+famsup        395 non-null object
+paid          395 non-null object
+activities    395 non-null object
+nursery       395 non-null object
+higher        395 non-null object
+internet      395 non-null object
+romantic      395 non-null object
+famrel        395 non-null int64
+freetime      395 non-null int64
+goout         395 non-null int64
+Dalc          395 non-null int64
+Walc          395 non-null int64
+health        395 non-null int64
+absences      395 non-null int64
+passed        395 non-null object
+dtypes: int64(13), object(18)
+memory usage: 95.7+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>school        0
+sex           0
+age           0
+address       0
+famsize       0
+Pstatus       0
+Medu          0
+Fedu          0
+Mjob          0
+Fjob          0
+reason        0
+guardian      0
+traveltime    0
+studytime     0
+failures      0
+schoolsup     0
+famsup        0
+paid          0
+activities    0
+nursery       0
+higher       
